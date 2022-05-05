@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+
+    <main class="flex-grow text-neutral-800">
+      <section id="hero" class="w-full pb-24">
+        <div
+          class="relative mx-auto grid max-w-screen-xl grid-cols-12 gap-x-6 overflow-hidden px-4 sm:px-8"
+          v-bind="$attrs"
+        >
+          <div
+            class="col-span-12 mt-12 space-y-4 px-6 text-center sm:space-y-6 sm:text-left lg:col-span-6 xl:mt-10"
+          >
+            <span
+              data-aos="fade-right"
+              data-aos-once="true"
+              class="text-header-gradient text-base font-semibold uppercase"
+              >Cherish the moment forever</span
+            >
+            <h1
+              data-aos="fade-right"
+              data-aos-once="true"
+              class="text-[2.5rem] font-bold capitalize leading-tight sm:pr-8 sm:text-5xl xl:pr-10 xl:text-6xl"
+            >
+              Your Flowers<br /><span class="text-header-gradient"
+                >Preserved</span
+              >
+              Elegantly
+            </h1>
+            <p
+              data-aos="fade-down"
+              data-aos-once="true"
+              data-aos-delay="300"
+              class="paragraph hidden sm:block"
+            >
+              Gawang Diwa provides unique hand-made products and visual art
+              commissions combined with fine artistry, quality service, and
+              soulful expression.
+            </p>
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="700"
+              class="mt-2 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4"
+            >
+              <a
+                class="max-w-full rounded-full border border-[#5C6451] bg-gradient-to-r from-[#5C6451] to-[#889476] px-8 py-4 text-center text-sm text-white transition duration-300 hover:shadow-md hover:shadow-[#5c6451]/50"
+                href="https://www.instagram.com/gawangdiwa/"
+              >
+                See our Catalog
+              </a>
+              <!-- <BaseButton
+              class="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#0c66ee] flex items-center justify-center"
+            >
+              <span>Download App</span>
+              <ChevronDownIcon :size="20" class="mt-1 text-[#0c66ee]" />
+            </BaseButton> -->
+            </div>
+          </div>
+          <div class="col-span-12 hidden sm:block lg:col-span-6">
+            <div class="w-full">
+              <img
+                data-aos="fade-up"
+                data-aos-once="true"
+                src="./assets/img/logo.png"
+                class="mt-4"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- <img
+          data-aos="fade-up"
+          data-aos-delay="300"
+          :src="require('~/assets/img/pattern/ellipse-1.png')"
+          class="hidden sm:block absolute bottom-12 xl:bottom-16 left-4 xl:left-0 w-6"
+        />
+        <img
+          data-aos="fade-up"
+          data-aos-delay="300"
+          :src="require('~/assets/img/pattern/ellipse-2.png')"
+          class="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6"
+        />
+        <img
+          data-aos="fade-up"
+          data-aos-delay="300"
+          :src="require('~/assets/img/pattern/ellipse-3.png')"
+          class="hidden sm:block absolute bottom-56 right-24 w-6"
+        />
+        <img
+          data-aos="fade-up"
+          data-aos-delay="300"
+          :src="require('~/assets/img/pattern/star.png')"
+          class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
+        /> -->
+        </div>
+      </section>
+
+      <!-- FAQ section -->
+      <section class="my-24 w-full">
+        <div
+          class="relative mx-auto grid max-w-screen-xl grid-cols-12 gap-x-6 overflow-hidden px-4 sm:px-8"
+          v-bind="$attrs"
+        >
+          <div
+            data-aos="fade-right"
+            data-aos-delay="150"
+            class="col-span-12 lg:col-span-6"
+          >
+            <div class="w-full">
+              <img
+                :src="require('~/assets/img/faq2.png')"
+                class="w-full"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-delay="150"
+            class="col-span-12 mt-8 px-4 sm:px-6 lg:col-span-6"
+          >
+            <span
+              class="text-header-gradient mb-4 text-base font-semibold uppercase sm:mb-2"
+              >Support</span
+            >
+            <h2 class="mb-10 text-3xl font-semibold sm:mb-6 sm:text-4xl">
+              Frequently asked questions
+            </h2>
+
+            <ul class="shadow-box">
+              <BaseAccordion
+                v-for="(accordion, index) in accordions"
+                :key="index"
+                :accordion="accordion"
+              />
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="my-10 flex w-full justify-center">
+        <a
+          v-smooth-scroll
+          data-aos="flip-down"
+          data-aos-delay="150"
+          href="#navbar"
+          class="flex items-center space-x-2 rounded-md border border-[#DDDDDD] bg-[#FAFAFA] px-6 py-3 text-gray-700 hover:bg-gray-100 hover:shadow-md"
+        >
+          <span>Back to top</span>
+          <ArrowUpIcon :size="20" />
+        </a>
+      </div>
+
+      <h2>Employee Card Example</h2>
+      <employee-card
+        name="Leah Crystal"
+        avatar="./assets/img/logo.png"
+      ></employee-card>
+    </main>
+    <!-- scripts -->
+    <script src="./assets/js/test.js" type="module"></script>
+  </body>
+</html>
