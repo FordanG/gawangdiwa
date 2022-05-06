@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gawang Diwa</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/register.js" type="module" defer></script>
+  </head>
+  <body>
+    <g-nav></g-nav>
+    <main class="flex-grow text-neutral-800">
+      <section class="pb-10 pt-20">
+        <div class="container mx-auto flex flex-col items-center">
+          <h1 class="text-4xl font-bold uppercase tracking-wide text-primary">
+            Registration
+          </h1>
+        </div>
+      </section>
+      <section>
+        <div class="container mx-auto grid grid-cols-12">
+          <div class="col-span-4 col-start-5">
+            <h2 class="text-lg font-bold text-secondary underline">
+              Get unique preserved floral resins from us!
+            </h2>
+            <h3 class="text-lg italic">
+              Register now and get to see our diverse product catalog
+            </h3>
+            <form name="registration" class="mt-10 w-full max-w-lg">
+              <div class="-mx-3 mb-6 flex flex-wrap">
+                <div class="mb-6 w-full px-3 md:mb-0 md:w-1/2">
+                  <label
+                    class="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
+                    for="first-name"
+                  >
+                    First Name
+                  </label>
+                  <input
+                    class="mb-3 block w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    placeholder="Jane"
+                  />
+                </div>
+                <div class="w-full px-3 md:w-1/2">
+                  <label
+                    class="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
+                    for="last-name"
+                  >
+                    Last Name
+                  </label>
+                  <input
+                    class="block w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    placeholder="Doe"
+                  />
+                </div>
+              </div>
+              <div class="-mx-3 mb-6 flex flex-wrap">
+                <div class="w-full px-3">
+                  <label
+                    class="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
+                    for="email"
+                  >
+                    E-mail
+                  </label>
+                  <input
+                    class="mb-3 block w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="janedoe@email.com"
+                  />
+                </div>
+              </div>
+
+              <div class="-mx-3 mb-6 flex flex-wrap">
+                <div class="w-full px-3">
+                  <label
+                    class="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
+                    for="password"
+                  >
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    class="mb-3 block w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
+                    id="password"
+                    name="password"
+                    placeholder="********"
+                  />
+                </div>
+              </div>
+              <div class="md:flex md:items-center">
+                <div class="md:w-1/4">
+                  <input
+                    class="w-64 transform rounded-sm bg-primary py-2 px-8 font-bold uppercase text-white drop-shadow-md transition duration-200 ease-in-out hover:scale-102 hover:brightness-110"
+                    type="submit"
+                    value="Create Account"
+                  />
+                </div>
+                <div class="md:w-2/3"></div>
+              </div>
+            </form>
+            <a href="./login.html" class="mt-10 block text-gray-400"
+              >Have an account already?</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <g-footer></g-footer>
+  </body>
+</html>
