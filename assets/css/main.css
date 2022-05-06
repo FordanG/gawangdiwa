@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-header-gradient[data-v-d7dd2c02] {
+.text-header-gradient {
   background: #c7ccc0;
   background: linear-gradient(
     169.4deg,

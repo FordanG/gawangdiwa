@@ -14,8 +14,8 @@ export class Navbar extends HTMLElement {
           <a href="index.html"
             ><img
               src="./assets/img/logo.png"
-              height="50"
-              width="50"
+              height="60"
+              width="60"
               alt="Gawang Diwa Logo"
           /></a>
         </div>
@@ -45,7 +45,7 @@ export class Navbar extends HTMLElement {
             </li>
             <li class="inline">
               <button
-                class="transform rounded-sm bg-secondary px-5 py-2 font-semibold text-primary transition duration-200 ease-in-out hover:scale-102 hover:brightness-110"
+                class="max-w-full rounded-full border border-[#5C6451] bg-gradient-to-r from-[#5C6451] to-[#889476] px-8 py-4 text-center text-sm text-white transition duration-300 hover:shadow-md hover:shadow-[#5c6451]/50"
               >
                 <a id="cta" href="./login.html">Login/Register</a>
               </button>
