@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <nav-bar></nav-bar>
+    <button
+      class="block rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      type="button"
+      data-modal-toggle="defaultModal"
+    >
+      Toggle modal
+    </button>
 
     <main class="flex-grow text-neutral-800">
       <section id="hero" class="w-full pb-24">
@@ -166,6 +177,7 @@
       ></employee-card>
     </main>
     <!-- scripts -->
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
     <script src="./assets/js/test.js" type="module"></script>
   </body>
 </html>

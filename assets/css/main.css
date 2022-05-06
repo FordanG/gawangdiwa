@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-header-gradient[data-v-d7dd2c02] {
+  background: #c7ccc0;
+  background: linear-gradient(
+    169.4deg,
+    #5c6451 -6.01%,
+    #8e9b7c 36.87%,
+    #88c238 78.04%,
+    #4b5f2e 103.77%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

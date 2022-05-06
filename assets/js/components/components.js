@@ -2,6 +2,6 @@
 
 import { Navbar } from "./navbar.js";
 // import { NavbarPrimary } from "./navbar-primary.js";
-
-const components = [Navbar];
+import { CartProduct } from "./cartProduct.js";
+const components = [Navbar, CartProduct];
 export default components;
