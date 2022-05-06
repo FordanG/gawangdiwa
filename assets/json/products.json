@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1IoZ5hGrSouZQ8MG9Rv6R7SO90U_e5IJ4",
+    "name": "Hexagonal Coaster",
+    "price": 300,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 2,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1CuHW1qN8hre09kepjB8_RRLJSFvSEfPc",
+    "name": "Circular Pop Socket",
+    "price": 180,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 3,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1JRzrT26u_G_bgBJXeYPa_Hyp9eHInNWt",
+    "name": "Guitar Pick",
+    "price": 120,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 4,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1syehhnhHWoxbB9dGvDOj9djv8xfK3oBG",
+    "name": "Short Hair Comb",
+    "price": 350,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 5,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1t9qSDjk58oQkNTcL-VK7adKCozHfTr-r",
+    "name": "Letter Necklace",
+    "price": 200,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 6,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1R9rvBnRXlZQBJQ9c9yO1Nz6XS3-NueGu",
+    "name": "Letter Keychain",
+    "price": 180,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 7,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1ucclvEK_5uWaWCjSvFcCeDsR4rH9wh4W",
+    "name": "Moon Necklace",
+    "price": 250,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 8,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1VTNoxzf9ODb5Isq5W2D4Nd4J5EoxRUR1",
+    "name": "Irregular Coaster",
+    "price": 390,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 9,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1hpH80ZerVtoLeSuWGZPSGp-HyTzSfBo-",
+    "name": "Earrings + Necklace Set",
+    "price": 600,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 10,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1wA_9oe_v5PMnJGIZlE5SIA99ATrxWm7Y",
+    "name": "Round Necklace",
+    "price": 350,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 11,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1JzE1DKq66gDXqusC_TRvW9mot0lP9mJX",
+    "name": "Long Hair Comb",
+    "price": 400,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 12,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1gJq5d3uwh_tXrGUPVmYk8FrNh729K9n0",
+    "name": "Round Coaster",
+    "price": 300,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 13,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1Aq8kg_6z7wZy_AWem6xMQs_TGfEldXTN",
+    "name": "Heart Coaster",
+    "price": 400,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 14,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1TXvSURLnqbttnLUw5fXf1VqHqOrGznoz",
+    "name": "Star Necklace",
+    "price": 360,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 15,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1gX9d7fqV6KsyXm7lMUeOYqQl0Q7NDlyW",
+    "name": "8x8 Round Preservation Block",
+    "price": 6000,
+    "quantity": 1,
+    "categories": []
+  },
+  {
+    "id": 16,
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1YAJz_SmHS8dQkRE1b4nQ75Y_zuPRpR-k",
+    "name": "Round Keychain",
+    "price": 150,
+    "quantity": 1,
+    "categories": []
+  }
+]

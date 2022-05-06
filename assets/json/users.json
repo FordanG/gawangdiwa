@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "first_name": "Kare",
+    "last_name": "Grandison",
+    "email": "kgrandison0@discovery.com",
+    "password": "XUMGDAIoH92Q",
+    "cartProducts": [],
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "first_name": "Goddard",
+    "last_name": "Faithorn",
+    "email": "gfaithorn1@barnesandnoble.com",
+    "password": "g6Huusy",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 3,
+    "first_name": "Caye",
+    "last_name": "Kinnear",
+    "email": "ckinnear2@dell.com",
+    "password": "8cJOxQHL",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 4,
+    "first_name": "Ernest",
+    "last_name": "Pahlsson",
+    "email": "epahlsson3@huffingtonpost.com",
+    "password": "AJi5jc",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 5,
+    "first_name": "Joye",
+    "last_name": "Bordman",
+    "email": "jbordman4@mtv.com",
+    "password": "rut0lXL1PcyZ",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 6,
+    "first_name": "Ario",
+    "last_name": "Marland",
+    "email": "amarland5@bloglovin.com",
+    "password": "HtpiMU0",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 7,
+    "first_name": "Hilario",
+    "last_name": "Betser",
+    "email": "hbetser6@cbc.ca",
+    "password": "dG4SMmyg",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 8,
+    "first_name": "Lin",
+    "last_name": "Joynson",
+    "email": "ljoynson7@netvibes.com",
+    "password": "wxhFQthR",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 9,
+    "first_name": "Dominic",
+    "last_name": "Hindenburg",
+    "email": "dhindenburg8@jiathis.com",
+    "password": "FWvSKL",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 10,
+    "first_name": "Nesta",
+    "last_name": "Bruin",
+    "email": "nbruin9@dion.ne.jp",
+    "password": "lOmUx21SJYa",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 11,
+    "first_name": "Ezra",
+    "last_name": "Dungee",
+    "email": "edungeea@webnode.com",
+    "password": "pl8fxf1",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 12,
+    "first_name": "Fee",
+    "last_name": "Castangia",
+    "email": "fcastangiab@tripadvisor.com",
+    "password": "0pKiRmzDT8OB",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 13,
+    "first_name": "Adi",
+    "last_name": "Bortoloni",
+    "email": "abortolonic@cisco.com",
+    "password": "Kbu8uljwCn",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 14,
+    "first_name": "Maurise",
+    "last_name": "Sansam",
+    "email": "msansamd@sciencedaily.com",
+    "password": "DrvaEeOtXMl",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 15,
+    "first_name": "Allegra",
+    "last_name": "Doogood",
+    "email": "adoogoode@mysql.com",
+    "password": "68QiLAlIXxS",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 16,
+    "first_name": "Cybill",
+    "last_name": "Fiddiman",
+    "email": "cfiddimanf@army.mil",
+    "password": "JG7yMYh3lvVt",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 17,
+    "first_name": "Simone",
+    "last_name": "Bryden",
+    "email": "sbrydeng@wikipedia.org",
+    "password": "y97jsmqXka",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 18,
+    "first_name": "Cara",
+    "last_name": "Posthill",
+    "email": "cposthillh@mlb.com",
+    "password": "qU2i7UC8ZI",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 19,
+    "first_name": "Selene",
+    "last_name": "Bithell",
+    "email": "sbithelli@privacy.gov.au",
+    "password": "ZdnL1l",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 20,
+    "first_name": "Christi",
+    "last_name": "Palatino",
+    "email": "cpalatinoj@eventbrite.com",
+    "password": "zN84MwNEik",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 21,
+    "first_name": "Valentine",
+    "last_name": "Extal",
+    "email": "vextalk@prnewswire.com",
+    "password": "2bGJb6YUmrL",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 22,
+    "first_name": "Fritz",
+    "last_name": "Rakestraw",
+    "email": "frakestrawl@microsoft.com",
+    "password": "4IApN2",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 23,
+    "first_name": "Eddi",
+    "last_name": "Furniss",
+    "email": "efurnissm@prweb.com",
+    "password": "Di8WalX",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 24,
+    "first_name": "Benjy",
+    "last_name": "Silwood",
+    "email": "bsilwoodn@macromedia.com",
+    "password": "VYGYXMoDwcX7",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 25,
+    "first_name": "Shelia",
+    "last_name": "Whitman",
+    "email": "swhitmano@acquirethisname.com",
+    "password": "n96spt",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 26,
+    "first_name": "Joshuah",
+    "last_name": "Pakenham",
+    "email": "jpakenhamp@cisco.com",
+    "password": "VEFoaQy",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 27,
+    "first_name": "Branden",
+    "last_name": "Shiliton",
+    "email": "bshilitonq@posterous.com",
+    "password": "zGR5nwvgpR",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 28,
+    "first_name": "Gerry",
+    "last_name": "Ong",
+    "email": "gongr@theglobeandmail.com",
+    "password": "85LA2WXX",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 29,
+    "first_name": "Delinda",
+    "last_name": "Eynald",
+    "email": "deynalds@bbb.org",
+    "password": "1z5ghDOjHR",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 30,
+    "first_name": "Prisca",
+    "last_name": "Dederich",
+    "email": "pdedericht@bizjournals.com",
+    "password": "MAlqo5w",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 31,
+    "first_name": "Audre",
+    "last_name": "Sapsford",
+    "email": "asapsfordu@ucsd.edu",
+    "password": "gSfH8zq",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 32,
+    "first_name": "Loree",
+    "last_name": "Bulfoy",
+    "email": "lbulfoyv@vistaprint.com",
+    "password": "hGZ9vY",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 33,
+    "first_name": "Valdemar",
+    "last_name": "Jaquest",
+    "email": "vjaquestw@bigcartel.com",
+    "password": "Kfb80mA2a",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 34,
+    "first_name": "Bennie",
+    "last_name": "Collabine",
+    "email": "bcollabinex@jalbum.net",
+    "password": "1BzkPzJ",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 35,
+    "first_name": "Moshe",
+    "last_name": "Petru",
+    "email": "mpetruy@tinyurl.com",
+    "password": "fUUvrgw8",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 36,
+    "first_name": "Myles",
+    "last_name": "Sibyllina",
+    "email": "msibyllinaz@uol.com.br",
+    "password": "NeVjm0pgq",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 37,
+    "first_name": "Kameko",
+    "last_name": "Bartel",
+    "email": "kbartel10@amazon.de",
+    "password": "VbueYB7S2u",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 38,
+    "first_name": "Cynthia",
+    "last_name": "Keunemann",
+    "email": "ckeunemann11@123-reg.co.uk",
+    "password": "WkYpTOHEd3PF",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 39,
+    "first_name": "Alejoa",
+    "last_name": "Foulser",
+    "email": "afoulser12@ow.ly",
+    "password": "advWy6Mnsa",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 40,
+    "first_name": "Kristen",
+    "last_name": "Saill",
+    "email": "ksaill13@amazon.co.uk",
+    "password": "kLTZ2M4MQfY",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 41,
+    "first_name": "Gerrie",
+    "last_name": "Rasher",
+    "email": "grasher14@jiathis.com",
+    "password": "dfcZIv0aH",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 42,
+    "first_name": "Bernardine",
+    "last_name": "Bethell",
+    "email": "bbethell15@illinois.edu",
+    "password": "j6hF8KqjM",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 43,
+    "first_name": "Noell",
+    "last_name": "Deboick",
+    "email": "ndeboick16@pen.io",
+    "password": "7XtjOZ6Cj28",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 44,
+    "first_name": "Clarice",
+    "last_name": "Broadbere",
+    "email": "cbroadbere17@parallels.com",
+    "password": "CsHLDnlAf",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 45,
+    "first_name": "Iosep",
+    "last_name": "Peach",
+    "email": "ipeach18@apple.com",
+    "password": "vHj3TF",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 46,
+    "first_name": "Derrik",
+    "last_name": "Chander",
+    "email": "dchander19@psu.edu",
+    "password": "xs3TL46",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 47,
+    "first_name": "Nancy",
+    "last_name": "Tappor",
+    "email": "ntappor1a@wix.com",
+    "password": "kICoA6gqKwQe",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 48,
+    "first_name": "Carree",
+    "last_name": "Widdowson",
+    "email": "cwiddowson1b@apple.com",
+    "password": "1s91fZ54YG",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 49,
+    "first_name": "Donal",
+    "last_name": "Sanz",
+    "email": "dsanz1c@ebay.com",
+    "password": "m4T3GpySjB1",
+    "cartProducts": [],
+    "role": "user"
+  },
+  {
+    "id": 50,
+    "first_name": "Bella",
+    "last_name": "Aickin",
+    "email": "baickin1d@nba.com",
+    "password": "JHg7QkmZg4Vp",
+    "cartProducts": [],
+    "role": "user"
+  }
+]
