@@ -39,7 +39,7 @@ let totalPriceValue = 0;
 data.forEach((product, i) => {
   totalQuantityValue += 1;
   totalPriceValue += product.price;
-  const newCartProduct = document.createElement("cart-product");
+  const newCartProduct = document.createElement("g-cartproduct");
   newCartProduct.setAttribute("data", JSON.stringify(product));
   productList.appendChild(newCartProduct);
 

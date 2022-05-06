@@ -1,5 +1,4 @@
-console.log("cart");
-export class CartProduct extends HTMLElement {
+export class GCartProduct extends HTMLElement {
   constructor() {
     super();
     this.data = "";
@@ -38,7 +37,7 @@ export class CartProduct extends HTMLElement {
       <path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
     </svg>
 
-    <input id="quantity-${this.data.id}" class="mx-2 w-8 border text-center" type="text" value="${this.data.quantity}" />
+    <input id="quantity-${this.data.id}" class="mx-2 w-8 border text-center" type="text" value="${this.data.quantity}" disabled />
 
     <svg id="addQuantity-${this.data.id}" class="w-3 fill-current text-gray-600" viewBox="0 0 448 512">
       <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
@@ -50,4 +49,4 @@ export class CartProduct extends HTMLElement {
   }
 }
 
-window.customElements.define("cart-product", CartProduct);
+window.customElements.define("g-cartproduct", GCartProduct);
