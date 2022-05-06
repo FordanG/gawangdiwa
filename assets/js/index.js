@@ -25,7 +25,7 @@ const faqData = [
 // console.log(JSON.parse(JSON.stringify(data)));
 
 faqData.forEach((faq, i) => {
-  const newFAQItem = document.createElement("faq-item");
+  const newFAQItem = document.createElement("g-faq");
   newFAQItem.setAttribute("data", JSON.stringify(faq));
   newFAQItem.setAttribute("index", JSON.stringify(i));
   faqList.appendChild(newFAQItem);

@@ -14,3 +14,16 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+body {
+  @apply relative flex min-h-screen flex-col bg-zinc-50 font-sans antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-primary;
+}

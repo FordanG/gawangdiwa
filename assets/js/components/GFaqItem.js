@@ -1,4 +1,4 @@
-export class FAQItem extends HTMLElement {
+export class GFAQItem extends HTMLElement {
   constructor() {
     super();
     this.data = {};
@@ -7,9 +7,7 @@ export class FAQItem extends HTMLElement {
 
   connectedCallback() {
     this.data = JSON.parse(this.getAttribute("data"));
-    console.log(this.data);
     this.index = this.getAttribute("index");
-    console.log(this.index);
     this.removeAttribute("data");
     this.removeAttribute("index");
     this.render();
@@ -53,4 +51,4 @@ export class FAQItem extends HTMLElement {
   }
 }
 
-window.customElements.define("faq-item", FAQItem);
+window.customElements.define("g-faq", GFAQItem);
