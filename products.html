@@ -4,13 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Gawang Diwa</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/products.js" type="module" defer></script>
   </head>
   <body>
-    <nav-bar></nav-bar>
-    PRODUCTS
+    <g-nav></g-nav>
+    <main class="flex-grow text-neutral-800">
+      <!-- Page Navigation Title -->
+      <section class="pb-10 pt-20">
+        <div class="container mx-auto flex flex-col items-center">
+          <h1 class="text-4xl font-bold uppercase tracking-wide text-primary">
+            Products
+          </h1>
+        </div>
+      </section>
+
+      <section>
+        <div
+          id="productList"
+          class="container mx-auto grid grid-cols-4 gap-x-12 gap-y-20"
+        ></div>
+      </section>
+    </main>
+    <g-footer></g-footer>
   </body>
 </html>
