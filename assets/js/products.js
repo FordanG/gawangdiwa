@@ -10,7 +10,9 @@ const productList = document.querySelector("#productList");
 // Initialize variables from LocalStorage
 const data = JSON.parse(localStorage.getItem("products"));
 const users = JSON.parse(localStorage.getItem("users"));
-const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+const currentUser = localStorage.getItem("currentUser")
+  ? JSON.parse(localStorage.getItem("currentUser"))
+  : "";
 
 data.forEach((product, i) => {
   // For each product in the array, create a new component of G-Product
