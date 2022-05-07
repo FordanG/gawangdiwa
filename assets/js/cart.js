@@ -1,96 +1,150 @@
-// Importing Components./components.js
-
 import * as components from "./components/components.js";
 import * as activeNav from "./utils/activeNav.js";
-console.log("3 Navbars");
+
+// Initialize variables for DOM Manipulation
 const productList = document.querySelector("#productList");
-
-const data = [
-  {
-    id: 1,
-    imgSrc: "https://drive.google.com/uc?id=18KkAVkGFvaGNqPy2DIvTqmUH_nk39o3z",
-    name: "Iphone 6S",
-    price: 400,
-    quantity: 1,
-  },
-  {
-    id: 2,
-    imgSrc: "https://drive.google.com/uc?id=18KkAVkGFvaGNqPy2DIvTqmUH_nk39o3z",
-    name: "Iphone 5S",
-    price: 400,
-    quantity: 1,
-  },
-  {
-    id: 3,
-    imgSrc: "https://drive.google.com/uc?id=18KkAVkGFvaGNqPy2DIvTqmUH_nk39o3z",
-    name: "Iphone 3S",
-    price: 400,
-    quantity: 1,
-  },
-];
-console.log(JSON.stringify(data));
-// console.log(JSON.parse(JSON.stringify(data)));
-
 const totalQuantity = document.querySelector("#totalQuantity");
 const totalPrice = document.querySelector("#totalPrice");
 
+// Initialize variables from localstorage
+let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+const users = JSON.parse(localStorage.getItem("users"));
+const userIndex = users.findIndex((user) => user.email === currentUser.email);
+
+// Initialize variables for updating cart value
 let totalQuantityValue = 0;
 let totalPriceValue = 0;
-data.forEach((product, i) => {
-  totalQuantityValue += 1;
-  totalPriceValue += product.price;
-  const newCartProduct = document.createElement("g-cartproduct");
-  newCartProduct.setAttribute("data", JSON.stringify(product));
-  productList.appendChild(newCartProduct);
 
-  const quantity = document.querySelector(`#quantity-${product.id}`);
-  const finalPrice = document.querySelector(`#finalPrice-${product.id}`);
-  const removeButton = document.querySelector(`#removeButton-${product.id}`);
-  const addQuantity = document.querySelector(`#addQuantity-${product.id}`);
-  const decreaseQuantity = document.querySelector(
-    `#decreaseQuantity-${product.id}`
-  );
+// For each cart product, generate a component called g-cartproduct and pass the data
+const generateCart = (data) => {
+  console.log(data);
+  data.forEach((product, i) => {
+    // update total cart values
+    totalQuantityValue += product.quantity;
+    totalPriceValue += product.quantity * product.price;
 
-  decreaseQuantity.classList.add("invisible");
-  const buttons = [removeButton, addQuantity, decreaseQuantity];
+    // create new cart product and set attributes
+    const newCartProduct = document.createElement("g-cartproduct");
+    newCartProduct.setAttribute("data", JSON.stringify(product));
+    productList.appendChild(newCartProduct);
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", (e) => {
-      e.preventDefault();
-      console.log(button.id);
+    // Initialize variables for DOM Manipulation
+    const quantity = document.querySelector(`#quantity-${product.id}`);
+    const finalPrice = document.querySelector(`#finalPrice-${product.id}`);
+    const removeButton = document.querySelector(`#removeButton-${product.id}`);
+    const addQuantity = document.querySelector(`#addQuantity-${product.id}`);
+    const decreaseQuantity = document.querySelector(
+      `#decreaseQuantity-${product.id}`
+    );
 
-      if (button.id == `addQuantity-${product.id}`) {
-        quantity.value = eval(quantity.value) + 1;
-        const finalPriceValue = product.price * quantity.value;
-        finalPrice.textContent = `PHP ${finalPriceValue}`;
+    // Initialize array buttons for adding click events
+    const buttons = [removeButton, addQuantity, decreaseQuantity];
 
-        totalQuantityValue += 1;
+    // For each button, add a click event listener
+    buttons.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+        let finalPriceValue;
+
+        console.log(button.id);
+        // Different functions for each button type
+        switch (button.id) {
+          // Button Add Quantity
+          case `addQuantity-${product.id}`:
+            // Add Product Quantity and Update DOM Values
+            product.quantity += 1;
+            quantity.value = product.quantity;
+
+            finalPriceValue = product.price * product.quantity;
+            finalPrice.textContent = `PHP ${finalPriceValue}`;
+
+            break;
+
+          // Button decrease Quantity
+          case `decreaseQuantity-${product.id}`:
+            // decrease Product Quantity and Update DOM Values
+            product.quantity -= 1;
+            quantity.value = product.quantity;
+
+            finalPriceValue = product.price * product.quantity;
+            finalPrice.textContent = `PHP ${finalPriceValue}`;
+            break;
+
+          // Remove Button
+          case `removeButton-${product.id}`:
+            Swal.fire({
+              customClass: {
+                title: "text-primary text-xl",
+              },
+              title: `Do you want to remove this product from your cart?`,
+              imageUrl: `${product.imgSrc}`,
+              imageHeight: 200,
+              imageAlt: `${product.name}`,
+              html: `<b>${product.name}</b>`,
+              showCancelButton: true,
+              confirmButtonColor: "#AAC289",
+              cancelButtonColor: "#C6ADA8",
+              confirmButtonText: "Remove Product",
+            }).then((result) => {
+              if (result.isConfirmed) {
+                currentUser.cartProducts = currentUser.cartProducts.filter(
+                  (cartProduct) => cartProduct.id != product.id
+                );
+
+                let totalQuantityValue = 0;
+                let totalPriceValue = 0;
+                currentUser.cartProducts.forEach((product) => {
+                  totalQuantityValue += product.quantity;
+                  totalPriceValue += product.quantity * product.price;
+                });
+                totalQuantity.textContent = `Total Items: ${totalQuantityValue}`;
+                totalPrice.textContent = `PHP ${totalPriceValue}`;
+
+                Swal.fire(
+                  `${product.name} removed`,
+                  "Have fun shopping!",
+                  "success"
+                );
+                updateDatabase();
+                productList.innerHTML = "";
+                generateCart(currentUser.cartProducts);
+              }
+            });
+            break;
+        }
+
+        let totalQuantityValue = 0;
+        let totalPriceValue = 0;
+        currentUser.cartProducts.forEach((product) => {
+          totalQuantityValue += product.quantity;
+          totalPriceValue += product.quantity * product.price;
+        });
         totalQuantity.textContent = `Total Items: ${totalQuantityValue}`;
-
-        totalPriceValue += product.price;
         totalPrice.textContent = `PHP ${totalPriceValue}`;
-      } else if (button.id == `decreaseQuantity-${product.id}`) {
-        quantity.value = eval(quantity.value) - 1;
-        const finalPriceValue = product.price * quantity.value;
-        finalPrice.textContent = `PHP ${finalPriceValue}`;
+        // Update Database with new values
+        localStorage.setItem("currentUser", JSON.stringify(currentUser));
+        users[userIndex].cartProducts = currentUser.cartProducts;
+        localStorage.setItem("users", JSON.stringify(users));
 
-        totalQuantityValue -= 1;
-        totalQuantity.textContent = `Total Items: ${totalQuantityValue}`;
-
-        totalPriceValue -= product.price;
-        totalPrice.textContent = `PHP ${totalPriceValue}`;
-      }
-      if (eval(quantity.value) > 1) {
-        decreaseQuantity.classList.remove("invisible");
-      } else {
-        decreaseQuantity.classList.add("invisible");
-      }
+        // Toggle "-"" if product quantity is greater than 1 to prevent negative or zero quantity
+        if (product.quantity > 1) {
+          decreaseQuantity.classList.remove("invisible");
+        } else {
+          decreaseQuantity.classList.add("invisible");
+        }
+      });
     });
   });
-});
+};
+
+const updateDatabase = () => {
+  // Update Database with new values
+  localStorage.setItem("currentUser", JSON.stringify(currentUser));
+  users[userIndex].cartProducts = currentUser.cartProducts;
+  localStorage.setItem("users", JSON.stringify(users));
+};
+
+generateCart(currentUser.cartProducts);
 
 totalQuantity.textContent = `Total Items: ${totalQuantityValue}`;
 totalPrice.textContent = `PHP ${totalPriceValue}`;
-// for (let i = 0; i < 3; i++) {
-
-// }
