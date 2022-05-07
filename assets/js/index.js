@@ -2,8 +2,10 @@
 import * as components from "./components/components.js";
 import * as activeNav from "./utils/activeNav.js";
 
+// Initialize variable for DOM manipulation
 const faqList = document.querySelector("#faqList");
 
+// Initialize Data for the FAQs Section
 const faqData = [
   {
     faq: "Where can we follow you?",
@@ -22,18 +24,20 @@ const faqData = [
   },
 ];
 
-// console.log(JSON.parse(JSON.stringify(data)));
-
+// For each object in the faqData, generate a component g-faq
 faqData.forEach((faq, i) => {
+  // Create an element g-faq and pass the data then append to the parent element
   const newFAQItem = document.createElement("g-faq");
   newFAQItem.setAttribute("data", JSON.stringify(faq));
   newFAQItem.setAttribute("index", JSON.stringify(i));
   faqList.appendChild(newFAQItem);
 
+  // Initialize variables for DOM manipulation
   const faqButton = document.querySelector(`#faqButton-${i}`);
   const faqIcon = document.querySelector(`#faqIcon-${i}`);
   const faqAnswer = document.querySelector(`#faqAnswer-${i}`);
 
+  // If the faq is closed, open the details on click and vice versa
   let isOpen = false;
   faqButton.addEventListener("click", (e) => {
     if (!isOpen) {
