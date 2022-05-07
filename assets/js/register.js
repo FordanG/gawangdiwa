@@ -50,6 +50,7 @@ const registerUser = () => {
               title: "Confirmation",
               text: "Registration successful!",
               icon: "success",
+              confirmButtonColor: "#5C6451",
               confirmButtonText: "Continue",
             }).then(function () {
               // Brings the user to the login page if registration is succesful
@@ -69,6 +70,7 @@ const checkUser = (email) => {
       title: "User Found",
       text: "This email has been associated with an account already",
       icon: "error",
+      confirmButtonColor: "#5C6451",
       confirmButtonText: "Continue",
     });
   }

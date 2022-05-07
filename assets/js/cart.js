@@ -84,7 +84,7 @@ const generateCart = (data) => {
               imageAlt: `${product.name}`,
               html: `<b>${product.name}</b>`,
               showCancelButton: true,
-              confirmButtonColor: "#AAC289",
+              confirmButtonColor: "#5C6451",
               cancelButtonColor: "#C6ADA8",
               confirmButtonText: "Remove Product",
             }).then((result) => {
@@ -160,7 +160,7 @@ if (currentUser) {
         },
         title: `Thank you for buying from us!`,
         html: `You have bought a total of <em>${totalQuantityValue} items</em>, with a total cost of <b>PHP ${totalPriceValue}</b>`,
-        confirmButtonColor: "#AAC289",
+        confirmButtonColor: "#5C6451",
         confirmButtonText: "Great!",
       }).then(function () {
         currentUser.cartProducts = [];

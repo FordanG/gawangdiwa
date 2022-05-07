@@ -29,6 +29,7 @@ const loginUser = () => {
         title: "Confirmation",
         text: "Login successful!",
         icon: "success",
+        confirmButtonColor: "#5C6451",
         confirmButtonText: "Continue",
       }).then(function () {
         // Brings the user to the products page
@@ -46,6 +47,7 @@ const loginUser = () => {
         title: "Login Failed",
         text: "Please check your email and password",
         icon: "error",
+        confirmButtonColor: "#5C6451",
         confirmButtonText: "Continue",
       });
     }
