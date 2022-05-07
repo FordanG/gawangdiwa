@@ -80,9 +80,6 @@ data.forEach((product, i) => {
 const addToCartPrompt = (product) => {
   Swal.fire({
     icon: "success",
-    imageUrl: `${product.imgSrc}`,
-    imageHeight: 200,
-    imageAlt: `${product.name}`,
     title: `${product.name} has been added to the cart`,
     showConfirmButton: false,
     timer: 1500,
@@ -93,7 +90,7 @@ const addToCartPrompt = (product) => {
 const loginPrompt = () => {
   Swal.fire({
     title: `Login First to add to your Cart`,
-    confirmButtonColor: "#4188E4",
+    confirmButtonColor: "#5C6451",
     confirmButtonText: "Continue",
   }).then(function () {
     window.location = "./login.html";
