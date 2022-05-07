@@ -20,7 +20,7 @@ export class GNavbar extends HTMLElement {
           /></a>
         </div>
         <div>
-          <ul class="navLinks space-x-4">
+          <ul class="navLinks space-x-8">
             <li class="inline">
               <a
                 class="text-lg font-bold tracking-wide uppercase text-primary  hover:text-secondary"
@@ -35,14 +35,15 @@ export class GNavbar extends HTMLElement {
                 >Products</a
               >
             </li>
-
             <li class="inline">
               <a
                 class="text-lg font-bold tracking-wide uppercase text-primary hover:text-secondary"
-                href="./cart.html"
-                >Cart</a
+                href="./contact.html"
+                >Contact Us</a
               >
             </li>
+
+            
             <li class="inline">
               <a
                  id="cta"  href="./login.html" class="max-w-full font-semibold text-lg rounded-lg border border-[#5C6451] bg-gradient-to-r from-[#5C6451] to-[#889476] px-8 py-2 text-center text-sm text-white transition duration-300 hover:shadow-md hover:shadow-[#5c6451]/50"
