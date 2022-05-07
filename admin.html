@@ -7,6 +7,13 @@
     <title>Gawang Diwa</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -15,10 +22,10 @@
   <body>
     <g-nav></g-nav>
     <main class="flex-grow text-neutral-800">
-      <section class="bg-tertiary pb-10 pt-24">
+      <section class="border-b-2 pb-10 pt-24">
         <div class="container mx-auto flex flex-col items-center">
           <h1
-            class="text-5xl font-bold uppercase tracking-wide text-secondary"
+            class="text-5xl font-bold uppercase tracking-wide text-primary"
             id="adminTitle"
           >
             Admin Page
@@ -108,46 +115,6 @@
               </table>
             </form>
           </div>
-
-          <div class="mt-10">
-            <h2
-              class="text-center text-2xl font-bold uppercase tracking-wide text-secondary"
-            >
-              Books Borrowed
-            </h2>
-            <table class="mt-4 table p-4">
-              <thead>
-                <tr>
-                  <th
-                    class="dark:border-dark-5 whitespace-nowrap border-b-2 p-4 font-bold text-gray-900"
-                    title="Field #1"
-                  >
-                    #
-                  </th>
-                  <th
-                    class="dark:border-dark-5 w-96 whitespace-nowrap border-b-2 p-4 text-left font-bold text-gray-900"
-                    title="Field #2"
-                  >
-                    Book Title
-                  </th>
-
-                  <th
-                    class="dark:border-dark-5 whitespace-nowrap border-b-2 p-4 font-bold text-gray-900"
-                    title="Field #4"
-                  >
-                    Book Author
-                  </th>
-                  <th
-                    class="dark:border-dark-5 whitespace-nowrap border-b-2 p-4 font-bold text-gray-900"
-                    title="Field #5"
-                  >
-                    Return Book
-                  </th>
-                </tr>
-              </thead>
-              <tbody id="booksBorrowedList"></tbody>
-            </table>
-          </div>
         </div>
       </section>
 
@@ -182,12 +149,6 @@
                   title="Field #4"
                 >
                   Email Address
-                </th>
-                <th
-                  class="dark:border-dark-5 whitespace-nowrap border-b-2 p-4 font-bold text-gray-900"
-                  title="Field #5"
-                >
-                  # of Borrowed Books
                 </th>
               </tr>
             </thead>
