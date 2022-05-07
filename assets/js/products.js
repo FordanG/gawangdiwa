@@ -48,7 +48,7 @@ data.forEach((product, i) => {
       // If the product is not yet in the user's cart then the
       // product's details will be added to the user's cart
       if (!productFound) {
-        users[userIndex].cartProducts.push(product);
+        currentUser.cartProducts.push(product);
         users[userIndex].cartProducts = currentUser.cartProducts;
 
         // Update the database with these changes

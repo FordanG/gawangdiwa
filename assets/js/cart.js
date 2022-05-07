@@ -5,9 +5,13 @@ import * as activeNav from "./utils/activeNav.js";
 const productList = document.querySelector("#productList");
 const totalQuantity = document.querySelector("#totalQuantity");
 const totalPrice = document.querySelector("#totalPrice");
+const cartTitle = document.querySelector("#cartTitle");
+const checkoutButton = document.querySelector("#checkoutButton");
 
 // Initialize variables from localstorage
-let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+let currentUser = localStorage.getItem("currentUser")
+  ? JSON.parse(localStorage.getItem("currentUser"))
+  : "";
 const users = JSON.parse(localStorage.getItem("users"));
 const userIndex = users.findIndex((user) => user.email === currentUser.email);
 
@@ -17,7 +21,6 @@ let totalPriceValue = 0;
 
 // For each cart product, generate a component called g-cartproduct and pass the data
 const generateCart = (data) => {
-  console.log(data);
   data.forEach((product, i) => {
     // update total cart values
     totalQuantityValue += product.quantity;
@@ -46,7 +49,6 @@ const generateCart = (data) => {
         e.preventDefault();
         let finalPriceValue;
 
-        console.log(button.id);
         // Different functions for each button type
         switch (button.id) {
           // Button Add Quantity
@@ -91,8 +93,8 @@ const generateCart = (data) => {
                   (cartProduct) => cartProduct.id != product.id
                 );
 
-                let totalQuantityValue = 0;
-                let totalPriceValue = 0;
+                totalQuantityValue = 0;
+                totalPriceValue = 0;
                 currentUser.cartProducts.forEach((product) => {
                   totalQuantityValue += product.quantity;
                   totalPriceValue += product.quantity * product.price;
@@ -113,8 +115,8 @@ const generateCart = (data) => {
             break;
         }
 
-        let totalQuantityValue = 0;
-        let totalPriceValue = 0;
+        totalQuantityValue = 0;
+        totalPriceValue = 0;
         currentUser.cartProducts.forEach((product) => {
           totalQuantityValue += product.quantity;
           totalPriceValue += product.quantity * product.price;
@@ -137,14 +139,46 @@ const generateCart = (data) => {
   });
 };
 
+if (currentUser) {
+  // Update Cart Title with name
+  cartTitle.textContent = `Hello ${currentUser.first_name}, Here's your cart `;
+  // Generate Cart
+  generateCart(currentUser.cartProducts);
+
+  checkoutButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    totalQuantityValue = 0;
+    totalPriceValue = 0;
+    currentUser.cartProducts.forEach((product) => {
+      totalQuantityValue += product.quantity;
+      totalPriceValue += product.quantity * product.price;
+    });
+    if (!(currentUser.cartProducts.length === 0)) {
+      Swal.fire({
+        customClass: {
+          title: "text-primary text-xl",
+        },
+        title: `Thank you for buying from us!`,
+        html: `You have bought a total of <em>${totalQuantityValue} items</em>, with a total cost of <b>PHP ${totalPriceValue}</b>`,
+        confirmButtonColor: "#AAC289",
+        confirmButtonText: "Great!",
+      }).then(function () {
+        currentUser.cartProducts = [];
+        updateDatabase();
+        productList.innerHTML = "";
+        totalQuantity.textContent = `Total Items: 0`;
+        totalPrice.textContent = `PHP 0`;
+      });
+    }
+  });
+}
+
 const updateDatabase = () => {
   // Update Database with new values
   localStorage.setItem("currentUser", JSON.stringify(currentUser));
   users[userIndex].cartProducts = currentUser.cartProducts;
   localStorage.setItem("users", JSON.stringify(users));
 };
-
-generateCart(currentUser.cartProducts);
 
 totalQuantity.textContent = `Total Items: ${totalQuantityValue}`;
 totalPrice.textContent = `PHP ${totalPriceValue}`;
