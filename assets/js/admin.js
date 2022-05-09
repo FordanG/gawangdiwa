@@ -201,6 +201,8 @@ export function generateList(database, databaseType) {
               const elements = e.target.elements;
               for (let i = 0; i < 3; i++) {
                 elements[i].disabled = false;
+                elements[i].classList =
+                  "block w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none";
               }
               elements[0].focus();
               editStatus = true;
