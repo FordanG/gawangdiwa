@@ -21,11 +21,11 @@ const submitForm = (data) => {
       if (isValidEmail(data.email)) {
         // Stores the inquiry data as object
         let inquiry = {
-          first_name: data.firstName,
-          last_name: data.lastName,
-          email: data.email,
-          inquiryType: data.inquiry,
-          message: data.message,
+          first_name: data.firstName.value,
+          last_name: data.lastName.value,
+          email: data.email.value,
+          inquiryType: data.inquiry.value,
+          message: data.message.value,
         };
 
         // Add the new inquiry to the list of inquiries
@@ -56,7 +56,7 @@ contactForm.addEventListener("submit", (e) => {
   const data = {};
   const elements = e.target.elements;
   for (let i = 0; i < elements.length; i++) {
-    data[elements[i].name] = elements[i].value;
+    data[elements[i].name] = elements[i];
   }
   // Submit the form data for validation and saving
   submitForm(data);
