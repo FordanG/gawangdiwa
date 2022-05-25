@@ -22,7 +22,7 @@ if (!auth.auth || auth.currentUser.role == "user") {
     });
   })();
 } else {
-  if (window.location.pathname == "/admin.html") {
+  if (window.location.pathname.includes("admin.html")) {
     // Initialize variables for DOM manipulation
     const profileSection = document.querySelector("#profile");
     const profileButton = document.querySelector("#profileButton");
@@ -185,7 +185,7 @@ export function generateList(database, databaseType) {
             confirmButtonColor: "#5C6451",
             confirmButtonText: "Continue",
           }).then(function () {
-            if (window.location.pathname == "/admin.html") {
+            if (window.location.pathname.includes("admin.html")) {
               window.location = "./admin.html";
             } else {
               window.location = "./profile.html";
