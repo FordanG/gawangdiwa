@@ -179,7 +179,11 @@ export function generateList(database, databaseType) {
             confirmButtonColor: "#5C6451",
             confirmButtonText: "Continue",
           }).then(function () {
-            window.location = "./admin.html";
+            if (window.location.pathname == "/admin.html") {
+              window.location = "./admin.html";
+            } else {
+              window.location = "./profile.html";
+            }
           });
         } else {
           //   After the user presses the edit button, a confirmation message will show up
