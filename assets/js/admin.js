@@ -3,7 +3,7 @@ import * as activeNav from "./utils/activeNav.js";
 import * as auth from "./utils/auth.js";
 
 // Make the admin page page accesible for logged in users only
-if (!auth.auth || auth.currentUser == "user") {
+if (!auth.auth || auth.currentUser.role == "user") {
   let message;
   if (!auth.auth) {
     message = "User Not Logged In";
