@@ -3,11 +3,17 @@ import * as activeNav from "./utils/activeNav.js";
 import * as auth from "./utils/auth.js";
 
 // Make the admin page page accesible for logged in users only
-if (!auth.auth) {
+if (!auth.auth || auth.currentUser = "user") {
+  let message;
+  if (!auth.auth) {
+     message = "User Not Logged In"
+  } else {
+    message = "User is not authorized to access this page"
+  }
   (() => {
     Swal.fire({
-      title: "User Not Logged In",
-      text: "Please login first before accessing the admin page",
+      title: message,
+      text: "Please login first with your admin account before accessing the admin page",
       icon: "error",
       confirmButtonColor: "#5C6451",
       confirmButtonText: "Continue",
