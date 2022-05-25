@@ -3,12 +3,12 @@ import * as activeNav from "./utils/activeNav.js";
 import * as auth from "./utils/auth.js";
 
 // Make the admin page page accesible for logged in users only
-if (!auth.auth || auth.currentUser = "user") {
+if (!auth.auth || auth.currentUser == "user") {
   let message;
   if (!auth.auth) {
-     message = "User Not Logged In"
+    message = "User Not Logged In";
   } else {
-    message = "User is not authorized to access this page"
+    message = "User is not authorized to access this page";
   }
   (() => {
     Swal.fire({
