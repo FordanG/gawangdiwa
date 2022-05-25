@@ -3,24 +3,30 @@ import * as activeNav from "./utils/activeNav.js";
 import * as auth from "./utils/auth.js";
 
 // Make the admin page page accesible for logged in users only
+
 if (!auth.auth || auth.currentUser.role == "user") {
   let message;
-  if (!auth.auth) {
-    message = "User Not Logged In";
-  } else {
-    message = "User is not authorized to access this page";
+
+  if (window.location.pathname.includes("admin.html")) {
+    if (auth.currentUser.role == "user") {
+      if (!auth.auth) {
+        message = "User Not Logged In";
+      } else {
+        message = "User is not authorized to access this page";
+      }
+      (() => {
+        Swal.fire({
+          title: message,
+          text: "Please login first with your admin account before accessing the admin page",
+          icon: "error",
+          confirmButtonColor: "#5C6451",
+          confirmButtonText: "Continue",
+        }).then(function () {
+          window.location = "./login.html";
+        });
+      })();
+    }
   }
-  (() => {
-    Swal.fire({
-      title: message,
-      text: "Please login first with your admin account before accessing the admin page",
-      icon: "error",
-      confirmButtonColor: "#5C6451",
-      confirmButtonText: "Continue",
-    }).then(function () {
-      window.location = "./login.html";
-    });
-  })();
 } else {
   if (window.location.pathname.includes("admin.html")) {
     // Initialize variables for DOM manipulation
