@@ -14,7 +14,7 @@ export class GFooter extends HTMLElement {
         <div class="row-gap-6 mb-4 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div class="sm:col-span-2">
             <a
-              href="./index.html"
+              href="./index"
               aria-label="Go home"
               title="Gawang Diwa"
               class="inline-flex items-center"
@@ -103,7 +103,7 @@ export class GFooter extends HTMLElement {
           >
             <li>
               <a
-                href="./privacy-policy.html"
+                href="./privacy-policy"
                 class="text-sm text-gray-600 transition-colors duration-300 hover:text-tertiary"
                 >Privacy Policy</a
               >
