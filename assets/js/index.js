@@ -10,17 +10,37 @@ const faqData = [
   {
     faq: "Where can we follow you?",
     faqAnswer:
-      "You can follow us on Facebook, Instagram, and TikTok: @gawangdiwa",
+      "Stay updated and connect with us on our social media platforms: Facebook, Instagram, and TikTok. Follow our handle: @gawangdiwa.",
   },
   {
-    faq: "How long can I expect my order to arrive?",
+    faq: "What's the estimated delivery time for my preserved flowers?",
     faqAnswer:
-      "Preserving flowers takes some delicate work. Please wait for atleast 1-2 weeks for your orders to be finished. Once you have paid, you can contact us for updates.",
+      "Crafting preserved flowers requires meticulous attention to detail. Kindly allow a window of 3-4 weeks for your order to be completed. After payment, feel free to reach out for order updates.",
   },
   {
-    faq: "Do you make custom accessories?",
+    faq: "How should I care for my preserved floral accessory?",
     faqAnswer:
-      "It depends on the order, but we can make use of your fresh flowers to create a unique piece for you!",
+      "Keep your floral accessory away from direct sunlight, moisture, and extreme temperatures. Store it in a cool, dry place to maintain its elegance and longevity.",
+  },
+  {
+    faq: "Can I send flowers from any occasion for preservation?",
+    faqAnswer:
+      "Yes, flowers from any special occasion—be it weddings, anniversaries, birthdays, or even a memorable date—can be sent to us for preservation.",
+  },
+  {
+    faq: "What if my flowers have already started to wilt?",
+    faqAnswer:
+      "While fresh flowers yield the best results, we can work with slightly wilted flowers. However, it's recommended to send them to us as soon as possible for optimal preservation.",
+  },
+  {
+    faq: "Do you offer international shipping?",
+    faqAnswer:
+      "Currently, we focus on local deliveries. However, for special requests, please get in touch with us directly.",
+  },
+  {
+    faq: "What payment methods do you accept?",
+    faqAnswer:
+      "We accept a variety of payment methods including bank transfers, credit cards, and select e-wallets. Contact us for more details.",
   },
 ];
 

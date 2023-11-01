@@ -18,12 +18,12 @@ export class GNavbar extends HTMLElement {
           </div>
           <div class="hidden lg:flex">
             <ul class="navLinks space-x-8 flex-row flex">
-              <li>
+              <!-- <li>
                 <a class="text-lg font-bold tracking-wide uppercase text-primary hover:text-secondary" href="./index">Home</a>
-              </li>
-              <li>
+              </li> -->
+              <!-- <li>
                 <a class="max-w-full font-semibold text-lg rounded-lg border border-[#5C6451] bg-gradient-to-r from-[#5C6451] to-[#889476] px-8 py-2 text-center text-sm text-white transition duration-300 hover:shadow-md hover:shadow-[#5c6451]/50" href="./products">Our Products</a>
-              </li>
+              </li> -->
               <!-- <li>
                 <a class="text-lg font-bold tracking-wide uppercase text-primary hover:text-secondary" href="./contact">Contact Us</a>
               </li>
@@ -34,22 +34,22 @@ export class GNavbar extends HTMLElement {
               </li> -->
             </ul>
           </div>
-          <button id="mobile-menu-button" class="lg:hidden focus:outline-none">
+          <!-- <button id="mobile-menu-button" class="lg:hidden focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
-          </button>
+          </button> -->
         </div>
-        <div id="mobile-menu" class="fixed inset-0 hidden bg-white z-40 lg:hidden">
+        <!-- <div id="mobile-menu" class="fixed inset-0 hidden bg-white z-40 lg:hidden">
           <div class="pt-10 pb-5 flex flex-col items-center justify-center space-y-4">
             <a class="text-2xl font-bold tracking-wide uppercase text-primary hover:text-secondary" href="./index">Home</a>
             <a class="max-w-full font-semibold text-lg rounded-lg border border-[#5C6451] bg-gradient-to-r from-[#5C6451] to-[#889476] px-8 py-2 text-center text-sm text-white transition duration-300 hover:shadow-md hover:shadow-[#5c6451]/50" href="./products">Our Products</a>
-            <!-- <a class="text-2xl font-bold tracking-wide uppercase text-primary hover:text-secondary" href="./contact">Contact Us</a>
+            <a class="text-2xl font-bold tracking-wide uppercase text-primary hover:text-secondary" href="./contact">Contact Us</a>
             <a id="cta-mobile" href="./login" class="max-w-full font-semibold text-lg rounded-lg border border-[#5C6451] bg-gradient-to-r from-[#5C6451] to-[#889476] px-8 py-2 text-center text-sm text-white transition duration-300 hover:shadow-md hover:shadow-[#5c6451]/50">
               Login/Register
-            </a> -->
+            </a>
           </div>
-        </div>
+        </div> -->
       </nav>
     `;
 

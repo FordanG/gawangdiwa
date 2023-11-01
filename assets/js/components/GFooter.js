@@ -32,9 +32,8 @@ export class GFooter extends HTMLElement {
             </a>
             <div class="mt-2 lg:max-w-sm">
               <p class="text-sm text-gray-800">
-                Gawang Diwa provides unique hand-made products and visual art
-                commissions combined with fine artistry, quality service, and
-                soulful expression.
+                Transform Your Wedding Bouquets and Unique Blooms <br />
+              into Timeless Keepsakes with us
               </p>
             </div>
           </div>
@@ -69,7 +68,7 @@ export class GFooter extends HTMLElement {
             >
             <div class="mt-1 flex items-center space-x-3">
               <a
-                href="https://www.facebook.com/gawangdiwa"
+                href="https://www.instagram.com/gawangdiwa/"
                 class="text-gray-500 transition-colors duration-300 hover:text-tertiary"
               >
                 <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
@@ -80,7 +79,7 @@ export class GFooter extends HTMLElement {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/gawangdiwa/"
+                href="https://www.facebook.com/gawangdiwa"
                 class="text-gray-500 transition-colors duration-300 hover:text-tertiary"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
@@ -96,7 +95,7 @@ export class GFooter extends HTMLElement {
           class="flex flex-col-reverse justify-between border-t py-5 lg:flex-row"
         >
           <p class="text-sm text-gray-600">
-            © Copyright 2022 Gawang Diwa All rights reserved.<span class="invisible "></span>
+            © Copyright 2020 | Gawang Diwa | All rights reserved.<span class="invisible "></span>
           </p>
           <ul
             class="mb-3 flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-5 lg:mb-0"

@@ -22,7 +22,7 @@ export class GFAQItem extends HTMLElement {
                 class="flex w-full items-center justify-between p-4 focus:outline-none"
                 id="faqButton-${this.index}"
               >
-                <p class="text-lg font-medium">
+                <p class="text-lg font-medium text-left">
                   ${this.data.faq}
                 </p>
                 <!-- Add "transform rotate-180" classes on svg, if is open" -->
