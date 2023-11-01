@@ -584,9 +584,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: -0.75rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .-mx-8 {
